@@ -21,6 +21,7 @@ public:
 			cout << "\nQueues overflow\n";
 			return;
 		}
-	}
-};
+
+		
+
 
