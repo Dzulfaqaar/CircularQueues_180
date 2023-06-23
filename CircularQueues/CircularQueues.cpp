@@ -52,7 +52,9 @@ public:
 		else {
 			//jika elemen yang dihapus berada di posisi terakhir array, kembali ke awal array
 			if (FRONT == max - 1)
-				FRONT;
+				FRONT = 0;
+			else
+				FRONT = FRONT + 1;
 		}
 	}
 
@@ -78,7 +80,7 @@ public:
 		}
 		else {
 			//jika FRONT_position > REAR_position, iterasi dari FRONT hingga akhir array
-			while (FRONT_position <= n - 1) {
+			while (FRONT_position <=  - 1) {
 				cout << queue_array[FRONT_position] << " ";
 				FRONT_position++;
 			}
@@ -94,14 +96,12 @@ int main() {
 	while (true) {
 		try {
 			cout << "menu" << endl;
-		}
-	}
-}
+			cout << "1. implement insert operation" << endl;
+			cout << "2. implement delete operation" << endl;
+			cout << "3. display values" << endl;
+			cout << "4. exit " << endl;
+			cout << "enter your choice(1-4): ";
+			cin >> ch;
+			cout << endl;
 
-
-
-
-
-		
-
-
+			
