@@ -52,7 +52,7 @@ public:
 		else {
 			//jika elemen yang dihapus berada di posisi terakhir array, kembali ke awal array
 			if (FRONT == max - 1)
-				FRONT
+				FRONT;
 		}
 	}
 
@@ -75,6 +75,13 @@ public:
 				FRONT_position++;
 			}
 			cout << endl;
+		}
+		else {
+			//jika FRONT_position > REAR_position, iterasi dari FRONT hingga akhir array
+			while (FRONT_position <= n-1) {
+
+
+			}
 		}
 	}
 }
